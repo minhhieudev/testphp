@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  table, th, td {
+    border: 1px solid rgb(206, 33, 33);
+    border-collapse: collapse;
+    background-color: aqua;
+    color: rgb(8, 1, 1);
+  }
+  
+</style>
+<script type="text/javascript">
+
+  
+
+function myFunction() {
+  document.getElementById('vmh2').style.display = "table-row";
+  document.getElementById('vmh3').style.display = "table-row";
+  var data =document.getElementById("vmh123").value
+  document.getElementById("vmh3").innerHTML =data;
+}
+</script>
+<body>
+  <form action="" style="text-align: center;">
+    <p style="color: blue;text-align: center;font-size: 70px;">Đăng nhập</p>
+    <table style="width: 800px;height: 300px;">
+        <tr style="font-size: 40px;">
+          <td style="height: 10px;"> Mã người dùng</td>
+          <td> <input style=""  type="text"  id="vmh123"></td>
+        </tr>
+        <tr  style="font-size: 40px;" >
+          <td style="height: 40px;">Mật khẩu</td>
+          <td><input style="" type="password" id="fname"></td>
+        </tr>
+        <tr>
+          <td style="height: 40px;" colspan="2"><input type="button" onclick="myFunction()" value="Submit"></input></td>
+        </tr>
+        <tr id="vmh2" style="height: 80px;display: none; ">
+          <td id="vmh3" colspan="2" style="display: none;text-align: center;" >
+            
+          </td>
+        </tr>
+    </table>
+  </form> 
+</body>
+</html>
+
+
+
+
+
+<!-- <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit"> -->

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<script type="text/javascript">
+    var buttons = document.getElementsByClassName('tablinks');
+    var contents = document.getElementsByClassName('tabcontent');
+    function showContent(id){
+        for (var i = 0; i < contents.length; i++) {
+            contents[i].style.display = 'none';
+        }
+        var content = document.getElementById(id);
+        content.style.display = 'block';
+    }
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", function(){
+            var id = this.textContent;
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove("active");
+            }
+            this.className += " active";
+            showContent(id);
+        });
+    }
+    showContent('PHP');
+</script>
+<body>
+  <div class="Main">
+    <table style="width:100%">
+  <tr >
+    <th colspan="2">
+      <div class="Main" style="text-align: center;height: 80px;background-color: rgb(125, 226, 84);color: whitesmoke;">
+    <p style="font-size: 40px;margin: 0;">Bài tập NGÔN NGỮ HTML</p>
+  </div>
+    </th>
+  </tr>
+  <tr>
+    <td style="width: 30%;background-color: antiquewhite;">
+      <nav style="line-height: 40px;">
+    <ul >
+      <li><a href="#1" target="_self" >Bài 01 - Các tag cơ bản</a></li>
+      <li><a href="#2" target="_self" >Bài 02 - Các tag cơ bản, có định dạng</a></li>
+      <li><a href="#3" target="_self" >Bài 03 - Định dạng trang web</a></li>
+      <li><a  >Bài 04 - Định dạng trang web (tt)</v></li>
+      <li><a  >Bài 05 - Định dạng văn bản</a></li>
+      <li><a  >Bài 07 - Hình ảnh, liên kết, danh sách và ký tự đặc biệt</a></li>
+      <li><a  >Bài 08 - Tạo bảng</a></li>
+      <li><a  >Bài 09 - Tạo bảng, có trộn dòng và cột</a></li>
+      <li><a  >Bài 10 - Tạo bảng, có trộn dòng và cột(tt)</a></li>
+      <li><a  >Bài 11 - Tạo form và các điều khiến</a></li>
+      <li><a  >Bài 12 - Tạo form và các điều khiển(tt)</v></li>
+      <li><a  >Bài 13 - Tạo form và các điều</a></li>
+      </div>
+    </ul>
+  </nav>
+    </td>
+    <td class="tabcontent" style="text-align: center;">
+      <iframe id="1"  src="1.html" frameborder="" width="100%" height="677px" name=""></iframe>
+      <!-- <iframe id="2"  src="11.html" frameborder="" width="1000px" height="677px" name=""></iframe>
+      <iframe id="3"  src="12.html" frameborder="" width="1000px" height="677px" name=""></iframe> -->
+    </td>
+  </tr>
+  
+</table>
+  
+</body>
+</html>

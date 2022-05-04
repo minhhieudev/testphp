@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  table, th, td {
+    border: 1px solid rgb(206, 33, 33);
+    border-collapse: collapse;
+  }
+</style>
+<script>
+  function Handel() {
+    document.getElementById('vmh2').style.display = "table-row";
+  }
+</script>
+<body>
+  <div class="Main" style="padding: 60px 31%;text-align: center;">
+    <font style="margin-bottom: -60px;font-size: 30px;color: rgb(9, 116, 25);">Phiếu đăng ký tham gia chương trình khuyến mãi</font>
+    <form action="" >
+      <table style="width: 700px;height: 500px;margin-top: 40px;background-color: aquamarine;color: rgb(9, 165, 9);font-size: 20px;">
+        <tr>
+          <td >Họ và tên</td>
+          <td style="text-align: left;"><input type="text" id=""></td>
+        </tr>
+        <tr>
+          <td> Địa chỉ</td>
+          <td style="text-align: left;"><input type="text" ></td>
+        </tr>
+        <tr>
+          <td> Điện thoại</td>
+          <td style="text-align: left;"><input type="text" ></td>
+        </tr>
+        <tr>
+          <td>Phái</td>
+          <td style="text-align: left;">
+            <input type="radio" value="Nam">
+            <label>Nam</label>
+            <input type="radio" value="Nu">
+            <label>Nữ</label></td>
+          </td>
+        </tr>
+        <tr>
+          <td>Nghề nghiệp</td>
+          <td style="text-align: left;">
+            <select id="" name="">
+              <option value="volvo">Giáo viên</option>
+              <option value="saab">Bác sĩ </option>
+              <option value="fiat">Kĩ sư</option>
+              <option value="audi">Khác</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Chọn sản phẩm tham gia</td>
+          <td style="text-align: left;">
+            <select id="" name="" size="4">
+              <option value="volvo">Kem đánh răng</option>
+              <option value="saab">Bột giặt</option>
+              <option value="fiat">Giàu gội đầu</option>
+              <option value="audi">Sữa tắm</option>
+            </select>
+          </td>
+        </tr>
+        <tr style="text-align: left;">
+          <td style="text-align: center;">Số người dự đoán tham gia</td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="button" onclick="Handel()"  value="Đồng ý"></td>
+        </tr>
+        <tr id="vmh2" style="display: none;">
+          <td colspan="2"><h3 style="color: red;">Bạn đã đăng ký thành công !!!!!</h3></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+</html>
